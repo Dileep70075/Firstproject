@@ -14,6 +14,8 @@ const port=3001
 app.use(cors());
 app.use(bodyParser.json());
 // app.use('/uploads',express.static(path.join(__dirname,'uploads')))
+
+
 const storage = multer.diskStorage({
     destination:'/uploads/',
     filename:function(req,file,cb){
@@ -21,6 +23,8 @@ const storage = multer.diskStorage({
         path.extname(file.originalname));
     }
 });
+
+
 const upload= multer({storage:storage});
 
 //database connection

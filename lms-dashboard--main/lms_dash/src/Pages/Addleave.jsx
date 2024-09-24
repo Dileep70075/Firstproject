@@ -210,7 +210,7 @@ export default function Addleave() {
                         </TableCell>   
               ))}
               <TableCell>
-              <DeleteIcon onClick={()=>handleDelete(index,row._id)}/>
+              {/* <DeleteIcon onClick={()=>handleDelete(index,row._id)}/> */}
               </TableCell>
                   </TableRow>
               ))}
